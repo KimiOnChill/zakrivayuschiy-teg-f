@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   max-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  border: 2px solid black;
+  border: 2px solid #000;
 }
 
 .header__title {
@@ -55,9 +55,9 @@
 }
 
 .hero__card {
-  margin: 100px auto;
+  margin: 0 auto;
   max-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  border: 2px solid black;
+  border: 2px solid #000;
   background-color: #fff;
   font-size: 18px;
   line-height: 21px;
@@ -70,8 +70,16 @@
   padding-block-start: clamp(0.21875rem, 0.2298rem - 0.0469vw, 0.1875rem);
   padding-block-end: clamp(0.34375rem, 0.3988rem - 0.2347vw, 0.1875rem);
 }
+.card__image-wrapper {
+  max-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  max-height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  border-block-start: 2px solid #000;
+  border-block-end: 2px solid #000;
+}
+
 .card__image {
-  inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  inline-size: 100%;
+  object-fit: contain;
 }
 
 .card__texts {
@@ -81,18 +89,47 @@
   gap: 27px;
 }
 
-.card__like-button {
-  border: 2px solid black;
+.card__buttons {
+  margin: 0 25px 25px clamp(11.0625rem, 3.9102rem + 30.5164vw, 31.375rem);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__icon-button {
   background-color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.card__like-button {
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 7.5px 37px;
 }
 
 .button__text {
   font-family: var(--acsent-text);
   font-size: 14px;
+  line-height: 90%;
+}
+
+.button__save {
+  max-width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem); 
+  border: 2px solid #000;
+  padding-block: 15px;
+  margin-block-end: 100px;
+  display: flex;
+  align-items: center;
+  gap: 3.5px;
 }
 
 @media (width <= 375px) {
-  .header, .hero__card {
+  .header {
     margin: 100px 0;
+  }
+
+  .hero__card {
+    margin: 0;
   }
 }
