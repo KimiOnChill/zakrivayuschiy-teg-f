@@ -70,11 +70,36 @@
   padding-block-start: clamp(0.21875rem, 0.2298rem - 0.0469vw, 0.1875rem);
   padding-block-end: clamp(0.34375rem, 0.3988rem - 0.2347vw, 0.1875rem);
 }
+
 .card__image-wrapper {
   max-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   max-height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   border-block-start: 2px solid #000;
   border-block-end: 2px solid #000;
+  position: relative;
+}
+
+.card__image-label {
+  font-family: var(--acsent-text);
+  font-size: 14px;
+  background-color: transparent;
+  mix-blend-mode: hard-light;
+  position: absolute;
+  left: clamp(16.5rem, 9.6998rem + 29.0141vw, 35.8125rem);
+  top: clamp(1.5625rem, 1.5185rem + 0.1878vw, 1.6875rem);
+  text-shadow:
+  -1px 0 var(--outline-color, #808080), 
+  0 1px var(--outline-color, #808080), 
+  1px 0 var(--outline-color, #808080), 
+  0 -1px var(--outline-color, #808080);
+}
+
+@supports((text-stroke: 1px var(--outline-color, #808080)) or (-webkit-text-stroke: 1px var(--outline-color, #808080))) {
+  .card__image-label {
+    -webkit-text-stroke: 1px var(--outline-color, #808080);
+    text-stroke: 1px var(--outline-color, #808080);
+    text-shadow: none;
+  }
 }
 
 .card__image {
