@@ -152,7 +152,12 @@
   margin-block-end: 100px;
   display: flex;
   align-items: center;
-  gap: 3.5px;
+  gap: 4.9px;
+}
+
+.save__icon{
+  width: 21px;
+  height: 21px;
 }
 
 .dialog-save[open] {
@@ -189,6 +194,17 @@
 
   .hero__card {
     margin: 0;
+  }
+
+  .button__save {
+    flex-direction: column;
+    padding: 15px 18px;
+    gap: 9px;
+  }
+
+  .save__icon{
+    width: 28px;
+    height: 28px;
   }
 
   .dialog-save[open] {
