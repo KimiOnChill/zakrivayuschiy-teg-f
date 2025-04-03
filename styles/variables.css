@@ -5,4 +5,21 @@
   --bold-font: 700;
   --normal-font: 400;
   --outline-color: #808080;
+  --background-image: 
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      rgba(211, 211, 211, 0) 2px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      rgba(211, 211, 211, 0) 2px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7,
+      #1a1a1a
+  );
 }
+
