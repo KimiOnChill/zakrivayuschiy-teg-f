@@ -137,7 +137,7 @@
 @supports((text-stroke: 1px var(--outline-color, #808080)) or (-webkit-text-stroke: 1px var(--outline-color, #808080))) {
   .card__image-label {
     -webkit-text-stroke: 1px var(--outline-color, #808080);
-    text-stroke: 1px var(--outline-color, #808080);
+    /* text-stroke: 1px var(--outline-color, #808080); */
     text-shadow: none;
   }
 }
@@ -217,13 +217,12 @@
   gap: 4.9px;
 }
 
-.save__icon{
+.save__icon {
+  position: relative;
+  z-index: 10;
   width: 21px;
   height: 21px;
-}
-
-.save__icon:hover path{
-  fill:#fff;
+  color: var(--primary-color, #fff);
   mix-blend-mode: difference;
 }
 
