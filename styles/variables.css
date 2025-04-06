@@ -25,5 +25,6 @@
   );
   --contour-color: #000;
   --animation-fill-color: #ff0000;
+  --transparent-color: rgba (0, 0, 0, 0);
 }
 
