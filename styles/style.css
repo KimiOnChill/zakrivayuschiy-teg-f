@@ -136,7 +136,7 @@
 @supports((text-stroke: 1px var(--outline-color, #808080)) or (-webkit-text-stroke: 1px var(--outline-color, #808080))) {
   .card__image-label {
     -webkit-text-stroke: 1px var(--outline-color, #808080);
-    /* text-stroke: 1px var(--outline-color, #808080); */
+    text-stroke: 1px var(--outline-color, #808080);
     text-shadow: none;
   }
 }
