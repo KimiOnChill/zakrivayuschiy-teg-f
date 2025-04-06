@@ -10,7 +10,6 @@
 
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
   font-family: var(--main-text, sans-serif);
   font-variation-settings: 'wght' var(--normal-font, 400);
   background-image: var(--background-image);
@@ -36,6 +35,7 @@
   font-weight: 400;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-block-start: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  max-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
 .header__subtitle {
@@ -177,10 +177,8 @@
   transform: scaleX(1);
 }
 
-/* Button with like */
 .card__like-button {
   padding-block: 7.5px;
-  /* padding-inline: 36px; */
   width: 138px;
 }
 
@@ -195,8 +193,9 @@
 }
 
 .button__save {
-  max-width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem); /* mobile 306px desktop 335px */
   padding: 15px 20px;
+  /* mobile 306px desktop 335px */
+  max-width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   margin-block-end: 100px;
   display: flex;
   align-items: center;
