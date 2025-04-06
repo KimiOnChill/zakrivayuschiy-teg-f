@@ -88,31 +88,31 @@
   filter: opacity(75%);
 }
 
-.image-tannenbaum{
+.image-tannenbaum {
   filter: contrast(75%) brightness(93%);
 }
 
-.image-darjlink{
+.image-darjlink {
   filter: saturate(30%) sepia(100%);
 }
 
-.image-fox{
+.image-fox {
   filter: grayscale(70%);
 }
 
-.image-moonrise{
+.image-moonrise {
   filter: invert(75%);
 }
 
-.image-hotel{
+.image-hotel {
   filter: blur(1px);
 }
 
-.image-isle{
+.image-isle {
   filter: sepia(60%);
 }
 
-.image-french{
+.image-french {
   filter: hue-rotate(30deg);
 }
 
@@ -164,7 +164,7 @@
   position: relative;
 }
 
-.button::after{
+.button::after {
   content:"";
   position: absolute;
   inset: 0;
@@ -178,70 +178,7 @@
   transform: scaleX(1);
 }
 
-.button:focus, .card__icon-button:focus {
-  outline: none;
-}
-
-.button:focus-visible {
-  box-shadow: 2px 2px 0 var(--acsent-color, #000);
-  transition: box-shadow 0.3s ease;
-}
-
-.card__icon-button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  padding: 0;
-}
-
-.card__icon-button:focus-visible {
-  border-color: var(--acsent-color, #000);
-  transition: border-color 0.3s ease;
-}
-
-.like-icon{
-  max-height:33px;
-}
-
-.core {
-  fill: transparent;
-  transition: fill 0.3s 0.03s ease;
-}
-
-.card__icon-button:hover .core {
-  fill: var(--contour-color, #000);
-  transition-delay: 0;
-}
-
-.card__icon-button:active .core {
-  fill: red;
-  transition-delay: 0;
-}
-
-.main-body {
-  fill: transparent;
-  transition: fill 0.3s ease;
-  transition-delay: 0;
-}
-
-.card__icon-button:hover .main-body {
-  fill: var(--contour-color, #000);
-  transition-delay: 0.05s;
-}
-
-.card__icon-button:active .main-body {
-  fill: red;
-  transition-delay: 0.05s;
-}
-
-.contour {
-  fill: var(--contour-color, #000);
-}
-
-.sparks {
-  opacity: 0;
-  fill: var(--animation-fill-color, #ff0000);
-}
-
+/* Button with like */
 .card__like-button {
   padding-block: 7.5px;
   /* padding-inline: 36px; */
