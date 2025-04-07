@@ -7,6 +7,3 @@ The design was taken from Figma.
 
 # Link to Github project
 https://github.com/KimiOnChill/zakrivayuschiy-teg-f
-
-# Link to Github web page
-https://kimionchill.github.io/zakrivayuschiy-teg-f/
